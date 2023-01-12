@@ -1,0 +1,98 @@
+html ,body{
+    padding: 0;
+    margin: 0;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.main{
+    height: 100vh;
+    background-color: paleturquoise;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 900;
+
+    /* layout */
+    display: grid;
+    align-items: center;
+    justify-items: center;
+
+}
+
+.form-container{
+    margin: 20px 40px;
+
+
+    /* layout */
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 400px;
+    gap: 20px;
+    align-items: center;
+    justify-items: center;
+
+}
+
+.box1{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    background-color: palevioletred;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+    display: flex;
+    flex-direction: column;
+    padding: 20px 40px;
+}
+
+.box2{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    background-color: peachpuff;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    
+    display: flex;
+    flex-direction: column;
+    padding: 20px 40px;
+}
+
+.box3{
+    grid-column: 3/4;
+    grid-row: 1/2;
+    background-color: palegreen;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    
+    display: flex;
+    flex-direction: column;
+    padding: 20px 40px;
+}
+
+.form input{
+    margin-top: 10px;
+    border: .5px solid transparent;
+    border-radius: 10px;
+    height: 50px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.form button{
+    margin-top: 20px;
+    border: .3 solid transparent;
+    height: 40px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    background-image: linear-gradient(palevioletred, palegreen );
+    transition: height, 2ms;
+}
+
+.form input ::placeholder {
+    color: red;
+}
+
+.form button:hover{
+   
+    height: 50px;
+    background-image: linear-gradient(palevioletred, palegreen );
+   
+}
